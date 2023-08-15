@@ -1,0 +1,927 @@
+{
+	"info": {
+		"_postman_id": "6cced0b3-8034-47d9-9be8-81a3054cac62",
+		"name": "Devsu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2307627"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "Ejemplos",
+					"item": [
+						{
+							"name": "Ejemplo 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Nombre\": \"Jose Lema\",    \r\n    \"Direccion\": \"Otavaldo sn y principal\",\r\n    \"Telefono\": \"098254785\",\r\n    \"Contrasenia\": 1234\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Clientes",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ejemplo 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Nombre\": \"Marianela Montalvo\",    \r\n    \"Direccion\": \"Amazonas y NNUU\",\r\n    \"Telefono\": \"097548965\",\r\n    \"Contrasenia\": 5678\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Clientes",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ejemplo 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Nombre\": \"Juan Osorio\",    \r\n    \"Direccion\": \"13 junio y Equinoccial\",\r\n    \"Telefono\": \"098874587\",\r\n    \"Contrasenia\": 1245\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Clientes",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Clientes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Clientes/ad297609-4006-40fb-9c1d-dbf809f63a8a",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Clientes",
+								"ad297609-4006-40fb-9c1d-dbf809f63a8a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Carlos\",\r\n    \"Genero\": \"M\",\r\n    \"Edad\": 47,\r\n    \"Identificacion\": \"A1123\",\r\n    \"Direccion\": \"Av Rivadavia 123\",\r\n    \"Telefono\": \"541141241\",\r\n    \"Contrasenia\": 9999\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7106/api/Clientes/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Clientes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Nombre\": \"Gonzalo\",\r\n    \"Genero\": \"M\",\r\n    \"Edad\": 40,\r\n    \"Identificacion\": \"1234\",\r\n    \"Direccion\": \"Av Siempreviva 1234\",\r\n    \"Telefono\": \"54114562012\",\r\n    \"Contrasenia\": \"1254\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7106/api/Clientes/ad297609-4006-40fb-9c1d-dbf809f63a8a",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Clientes",
+								"ad297609-4006-40fb-9c1d-dbf809f63a8a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Desactivar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Clientes/ad297609-4006-40fb-9c1d-dbf809f63a8a/Desactivar",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Clientes",
+								"ad297609-4006-40fb-9c1d-dbf809f63a8a",
+								"Desactivar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Activar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Clientes/ad297609-4006-40fb-9c1d-dbf809f63a8a/Activar",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Clientes",
+								"ad297609-4006-40fb-9c1d-dbf809f63a8a",
+								"Activar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Clientes/ad297609-4006-40fb-9c1d-dbf809f63a8a",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Clientes",
+								"ad297609-4006-40fb-9c1d-dbf809f63a8a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "Ejemplos",
+					"item": [
+						{
+							"name": "Ejemplo 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cliente\": \"Jose Lema\",\r\n    \"Numero\": 478758,\r\n    \"SaldoInicial\": 2000,\r\n    \"TipoCuenta\": \"Ahorros\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Cuentas",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ejemplo 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cliente\": \"Marianela Montalvo\",\r\n    \"Numero\": 225487,\r\n    \"SaldoInicial\": 100,\r\n    \"TipoCuenta\": \"Corriente\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Cuentas",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ejemplo 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cliente\": \"Juan Osorio\",\r\n    \"Numero\": 495878,    \r\n    \"TipoCuenta\": \"Ahorros\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Cuentas",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ejemplo 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cliente\": \"Marianela Montalvo\",\r\n    \"Numero\": 496825,\r\n    \"SaldoInicial\": 540,\r\n    \"TipoCuenta\": \"Ahorros\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Cuentas",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ejemplo 5",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cliente\": \"Jose Lema\",\r\n    \"Numero\": 585545,\r\n    \"SaldoInicial\": 1000,\r\n    \"TipoCuenta\": \"corriente\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Cuentas",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Cuentas/0DC24BF6-7188-4E35-91A5-240020A1933F",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Cuentas",
+								"0DC24BF6-7188-4E35-91A5-240020A1933F"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Cuentas?cliente=AD297609-4006-40FB-9C1D-DBF809F63A8A",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Cuentas"
+							],
+							"query": [
+								{
+									"key": "cliente",
+									"value": "AD297609-4006-40FB-9C1D-DBF809F63A8A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Cliente\": \"Gonzalo\",\r\n    \"Numero\": 2,\r\n    \"SaldoInicial\": 150,\r\n    \"TipoCuenta\": \"Corriente\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7106/api/Cuentas",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Cuentas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Cliente\": \"Gonzalo\",\r\n    \"Numero\": 1,\r\n    \"SaldoInicial\": 800,\r\n    \"TipoCuenta\": \"Corriente\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7106/api/Cuentas/0DC24BF6-7188-4E35-91A5-240020A1933F",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Cuentas",
+								"0DC24BF6-7188-4E35-91A5-240020A1933F"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Desactivar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Cuentas/0DC24BF6-7188-4E35-91A5-240020A1933F/Desactivar",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Cuentas",
+								"0DC24BF6-7188-4E35-91A5-240020A1933F",
+								"Desactivar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Patch Activar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Cuentas/0DC24BF6-7188-4E35-91A5-240020A1933F/Activar",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Cuentas",
+								"0DC24BF6-7188-4E35-91A5-240020A1933F",
+								"Activar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Cuentas/0DC24BF6-7188-4E35-91A5-240020A1933F",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Cuentas",
+								"0DC24BF6-7188-4E35-91A5-240020A1933F"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "Ejemplos",
+					"item": [
+						{
+							"name": "Ejemplo 1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cliente\": \"Jose Lema\",\r\n    \"CuentaNumero\": 478758,\r\n    \"TipoMovimiento\": \"d\",\r\n    \"Valor\": 575\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Movimientos",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ejemplo 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cliente\": \"Marianela Montalvo\",\r\n    \"CuentaNumero\": 225487,\r\n    \"TipoMovimiento\": \"c\",\r\n    \"Valor\": 600\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Movimientos",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ejemplo 3",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cliente\": \"Juan Osorio\",\r\n    \"CuentaNumero\": 495878,\r\n    \"TipoMovimiento\": \"c\",\r\n    \"Valor\": 150\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Movimientos",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Ejemplo 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Cliente\": \"Marianela Montalvo\",\r\n    \"CuentaNumero\": 496825,    \r\n    \"TipoMovimiento\": \"d\",\r\n    \"Valor\": 540\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:7106/api/Movimientos",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "7106",
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Movimientos/03745A12-8912-4199-BA29-065CF0BD1A75",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Movimientos",
+								"03745A12-8912-4199-BA29-065CF0BD1A75"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByCliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Movimientos?cliente=AD297609-4006-40FB-9C1D-DBF809F63A8A",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Movimientos"
+							],
+							"query": [
+								{
+									"key": "cliente",
+									"value": "AD297609-4006-40FB-9C1D-DBF809F63A8A"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByClienteCuenta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Movimientos?cliente=AD297609-4006-40FB-9C1D-DBF809F63A8A&cuenta=1",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Movimientos"
+							],
+							"query": [
+								{
+									"key": "cliente",
+									"value": "AD297609-4006-40FB-9C1D-DBF809F63A8A"
+								},
+								{
+									"key": "cuenta",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Cliente\": \"Gonzalo\",\r\n    \"CuentaNumero\": 1,    \r\n    \"TipoMovimiento\": \"c\",\r\n    \"Valor\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7106/api/Movimientos",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Movimientos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Movimientos/03745A12-8912-4199-BA29-065CF0BD1A75",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Movimientos",
+								"03745A12-8912-4199-BA29-065CF0BD1A75"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reportes",
+			"item": [
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7106/api/Reportes?cliente=AD297609-4006-40FB-9C1D-DBF809F63A8A&fecha=2023-08-15.2023-08-16",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7106",
+							"path": [
+								"api",
+								"Reportes"
+							],
+							"query": [
+								{
+									"key": "cliente",
+									"value": "AD297609-4006-40FB-9C1D-DBF809F63A8A"
+								},
+								{
+									"key": "fecha",
+									"value": "2023-08-15.2023-08-16"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
